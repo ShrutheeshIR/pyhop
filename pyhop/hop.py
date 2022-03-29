@@ -119,7 +119,7 @@ class Goal():
 operators = {}
 methods = {}
 
-def declare_operators(*op_list):
+def declare_operators(op_list):
     """
     Call this after defining the operators, to tell Pyhop what they are.
     op_list must be a list of functions, not strings.
@@ -127,7 +127,7 @@ def declare_operators(*op_list):
     operators.update({op.__name__:op for op in op_list})
     return operators
 
-def declare_methods(task_name,*method_list):
+def declare_methods(task_name,method_list):
     """
     Call this once for each task, to tell Pyhop what the methods are.
     task_name must be a string.

@@ -46,5 +46,5 @@ def print_methods(mlist):
     """Print out a table of what the methods are for each task"""
     print('{:<14}{}'.format('TASK:','METHODS:'))
     for task in mlist:
-        print('{:<14}'.format(task) + ', '.join(
+        print('{:<20}'.format(task) + ', '.join(
             [f.__name__ for f in mlist[task]]))

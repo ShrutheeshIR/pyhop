@@ -1,2 +1,4 @@
 build
 *.py[co]
+dist
+PyHOP.egg-info
